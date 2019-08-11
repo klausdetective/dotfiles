@@ -3,10 +3,18 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'jiangmiao/auto-pairs'
 
+"typescript
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+Plug 'Shougo/deoplete.nvim'
+Plug 'Shougo/denite.nvim'
+
 "colorschemes
 Plug 'morhetz/gruvbox'
 
 call plug#end()
+
+let g:deoplete#enable_at_startup = 1
 
 syntax on
 colorscheme gruvbox
@@ -24,4 +32,3 @@ imap jj <ESC>
 noremap <silent> <C-S>          :update<CR>
 vnoremap <silent> <C-S>         <C-C>:update<CR>
 inoremap <silent> <C-S>         <C-O>:update<CR>
-
