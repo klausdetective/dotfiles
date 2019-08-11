@@ -2,7 +2,13 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'jiangmiao/auto-pairs'
-
+"git
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+"pug
+Plug 'digitaltoad/vim-pug'
+"vue
+Plug 'posva/vim-vue'
 "typescript
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
